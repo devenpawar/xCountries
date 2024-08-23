@@ -16,8 +16,8 @@ function App() {
       setData(response.data);
       setLoading(false);
     } catch (error) {
-      console.error(error);
-      setError(error);
+      console.error("Error fetching data:", error); // Log the error to the console
+      setError(error); // Optional: still set the error state if needed for UI
       setLoading(false);
     }
   };
